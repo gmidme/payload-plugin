@@ -1,4 +1,7 @@
 # payload plugin for elasticsearch
+  * Currently only elasticsearch 7.11.x is tested,
+    
+    If you have any problems against others elasticsearch version, please submit a issue！
 
 ## When i need use this plugin?
 * if the field you want to query has many different tokens like term, and you want to redefine the  score by combine each matched term's predefined different score of each document,
