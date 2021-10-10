@@ -5,8 +5,11 @@
 then you can use payload plugin.
 * Give a example: image keyword search
 each image has different keywords, each keyword within the same image maybe has different weight, that makes sense.
-* so at this case, two image both has keywords: dog and car, but first one is more about dog, second one is more about car, so you can set different weight in each image about dog and car,
-when user query keyword dog, it would  surely recommend first image instead of use original tf-idf score algorithm.
+* so at this case, two image both has keywords: dog and car, 
+  
+  but first one is more about dog, second one is more about car, so you can set different weight in each image about dog and car,
+
+  when user query keyword dog, it would  surely recommend first image instead of use original tf-idf score algorithm.
 
 
 ## How to install this plugin to elasticsearch?
@@ -23,16 +26,22 @@ when user query keyword dog, it would  surely recommend first image instead of u
 ## How to use this plugin?
 
 * Create right settings and mapping fields.
-  you can check src/test/example/image_test.json
-  easily view it, you can use https://jsonformatter.curiousconcept.com/#
+  
+  you can check src/test/example/image_test.json.
+  
+  easily view it, you can use https://jsonformatter.curiousconcept.com/.
+  
   this example config will set kwPayloads as payload field.
+  
   you can update the index name to your own, add more other fields.
   
   
 
 
 * Use following query to apply payload plugin
+  
   you can specify multi values to the payload field and combine their scores to finally sort query result.
+  
   you can check src/test/example/query.json
   
    
