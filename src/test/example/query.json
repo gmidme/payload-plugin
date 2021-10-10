@@ -1,0 +1,14 @@
+{
+  "query": {
+    "bool" : {
+      "should": [
+        {"payload_term": {
+          "kwPayloads": "汽车"
+        }},
+
+        {"payload_term": {
+          "kwPayloads": "猫"
+        }} ] }
+
+  }
+}

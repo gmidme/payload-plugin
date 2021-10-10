@@ -1,0 +1,13 @@
+
+
+{
+  "script": {
+    "source": "ctx._source.kwPayloads='狗|0.1'",
+    "lang": "painless"
+  },
+  "query": {
+    "term": {
+      "imageId": "QFgRybC8HpCud4LXKXCtB2"
+    }
+  }
+}
