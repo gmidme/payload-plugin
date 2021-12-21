@@ -1,17 +1,17 @@
-package com.yufei.elasticsearch.payload;
+package com.yufei.opensearch.payload;
 
 import org.apache.lucene.index.Term;
 import org.apache.lucene.queries.payloads.AveragePayloadFunction;
 import org.apache.lucene.queries.payloads.PayloadScoreQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.spans.SpanTermQuery;
-import org.elasticsearch.index.query.BaseTermQueryBuilder;
+import org.opensearch.index.query.BaseTermQueryBuilder;
 import org.apache.lucene.util.BytesRef;
-import org.elasticsearch.common.xcontent.XContentParser;
+import org.opensearch.common.xcontent.XContentParser;
 import  org.apache.lucene.queries.payloads.PayloadDecoder;
 import org.apache.lucene.analysis.payloads.PayloadHelper;
-import org.elasticsearch.common.io.stream.StreamInput;
-import org.elasticsearch.index.query.QueryShardContext;
+import org.opensearch.common.io.stream.StreamInput;
+import org.opensearch.index.query.QueryShardContext;
 
 import java.io.IOException;
 import java.util.Objects;

@@ -1,8 +1,8 @@
-package com.yufei.elasticsearch.plugin;
+package com.yufei.opensearch.plugin;
 
-import com.yufei.elasticsearch.payload.PayloadSearchQueryBuilder;
-import org.elasticsearch.plugins.Plugin;
-import org.elasticsearch.plugins.SearchPlugin;
+import com.yufei.opensearch.payload.PayloadSearchQueryBuilder;
+import org.opensearch.plugins.Plugin;
+import org.opensearch.plugins.SearchPlugin;
 
 import java.util.Collections;
 import java.util.List;

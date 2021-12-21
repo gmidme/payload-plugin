@@ -10,50 +10,48 @@
 
 
     <properties>
-        <es.version>7.11.2</es.version>
-<!--                <es.version>7.12.0</es.version>-->
+
+        <ops.version>1.2.0</ops.version>
+
+
 
 
         <log4j.version>2.11.1</log4j.version>
 
-        <lucene.version>8.7.0</lucene.version>
+        <lucene.version>8.10.1</lucene.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     </properties>
 
+    <repositories>
+        <repository>
+            <id>oss.sonatype.org</id>
+            <name>OSS Sonatype</name>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+            <url>http://oss.sonatype.org/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
-<!--        <dependency>-->
-<!--            <groupId>org.elasticsearch</groupId>-->
-<!--            <artifactId>elasticsearch</artifactId>-->
-<!--            <version>${es.version}</version>-->
-<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-core -->
         <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch-core</artifactId>
-            <version>${es.version}</version>
+            <groupId>org.opensearch</groupId>
+            <artifactId>opensearch-core</artifactId>
+            <version>${ops.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+        <!-- https://mvnrepository.com/artifact/org.opensearch/opensearch -->
         <dependency>
-            <groupId>org.elasticsearch</groupId>
-            <artifactId>elasticsearch</artifactId>
-            <version>${es.version}</version>
+            <groupId>org.opensearch</groupId>
+            <artifactId>opensearch</artifactId>
+            <version>${ops.version}</version>
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.elasticsearch.test/framework -->
-        <dependency>
-            <groupId>org.elasticsearch.test</groupId>
-            <artifactId>framework</artifactId>
-            <version>${es.version}</version>
-<!--            <scope>test</scope>-->
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>
