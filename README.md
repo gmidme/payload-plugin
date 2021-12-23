@@ -1,7 +1,7 @@
-# payload plugin for elasticsearch
-  * Currently only elasticsearch 7.11.x is tested,
+# payload plugin for opensearch
+  * Currently only opensearch 1.2.0 is tested,
     
-    If you have any problems against others elasticsearch version, please submit a issue！
+    If you have any problems against others opensearch version, please submit a issue！
 
 ## When i need use this plugin?
 * if the field you want to query has many different tokens like term, and you want to redefine the  score by combine each matched term's predefined different score of each document,
@@ -15,14 +15,14 @@ each image has different keywords, each keyword within the same image maybe has 
   when user query keyword dog, it would  surely recommend first image instead of use original tf-idf score algorithm.
 
 
-## How to install this plugin to elasticsearch?
+## How to install this plugin to opensearch?
 
 * git clone https://github.com/jasstionzyf/payload-plugin.git
 * cd ./payload-plugin
 * mvn clean install
 * find payload-plugin-1.0-SNAPSHOT.jar
 * create payloadPlugin under your ES_HOME/plugins/
-* move plugin-descriptor.properties and payload-plugin-1.0-SNAPSHOT.jar to the folder and restart elasticsearch
+* move plugin-descriptor.properties and payload-plugin-1.0-SNAPSHOT.jar to the folder and restart opensearch
 
 
 
@@ -52,7 +52,7 @@ each image has different keywords, each keyword within the same image maybe has 
    
 
 ## How to update payload field content?
-   Use elasticsearch _update_by_query.
+   Use opensearch _update_by_query.
    you can check src/test/example/update.json.
     
 
